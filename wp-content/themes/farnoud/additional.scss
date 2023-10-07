@@ -1,0 +1,247 @@
+@import 'sass/breakpoints';
+@import 'sass/variables';
+
+
+
+$break1: 380px;
+$break2: 480px;
+$break3: 768px;
+$break4: 992px;
+$break5: 1300px;
+@mixin lg{
+    @media screen and (max-width:$break5){
+        @content;
+    }
+}
+@mixin md{
+    @media screen and (max-width:$break4){
+        @content;
+    }
+}
+@mixin sm{
+    @media screen and (max-width:$break3){
+        @content;
+    }
+}
+@mixin xs{
+    @media screen and (max-width:$break2){
+        @content;
+    }
+}
+@mixin xxs{
+    @media screen and (max-width:$break1){
+        @content;
+    }
+}
+
+
+
+
+.theFooterBack{
+    .theFooterBack{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .footerColumn1{
+            width: 18%;
+            @include xs{
+                width: 100% !important;
+                margin-bottom: 20px !important;
+                order: 4;
+            }
+            @include sm{
+                width: 50%;
+            }
+            .locationSvgRes{
+                @include xs{
+                    width: 30px;
+                    height: 20px;
+                }
+            }
+        }
+        .footerColumn2{
+            width: 20%;
+            @include xs{
+                width: 100% !important;
+                margin-bottom: 20px !important;
+                order: 2;
+            }
+            @include sm{
+                width: 50%;
+            }
+        }
+        .footerColumn3{
+            width: 20%;
+            @include xs{
+                width: 100% !important;
+                margin-bottom: 20px !important;
+                order: 3;
+            }
+            @include sm{
+                width: 50%;
+            }
+        }
+        .footerColumn4{
+            width: 28%;
+            @include xs{
+                width: 100% !important;
+                margin-bottom: 20px !important;
+                order: 1;
+            }
+            @include sm{
+                width: 50%;
+            }
+        }
+        a{
+            display: flex;
+            margin: 0 0 23px 0;
+            align-items: center;
+            color: #3c3c3c;
+        }
+        span{
+            display: inline;
+            padding-right: 8px;
+            cursor: context-menu;
+            color: #3c3c3c;
+        }
+        ul{
+            padding-right: 0;
+        }
+        .footerIconSocial{
+            display: flex;
+            flex-wrap: wrap;
+            a{
+                margin: 0 5px;
+            }
+            .editSvgFooter{
+                background-color: #ee7d39;
+                fill: #fff;
+                padding: 4px;
+            }
+        }
+    }
+}
+.copyRight{
+    background-color: #182536;
+    p{
+        text-align: center;
+        color: #fff;
+        font-size: 12px;
+        margin: 0;
+        padding: 7px 0;
+    }
+}
+.aboutLogoSection{
+    display: flex;
+    margin: 25px 0;
+    @include xs{
+        flex-wrap: wrap;
+    }
+    img{
+        @include xs{
+            margin: auto!important;
+        }     
+    }
+    .footerLogo{
+        margin: auto 30px;
+    }
+}
+.aboutUsSection{
+    margin: 0 10px;
+    p{
+        text-align: justify;
+    }
+}
+.copyRightLink{
+    color: #d1c8c8!important;
+    border-bottom: 1px dashed #fff;
+}
+.theMainIcon{
+    position: fixed;
+    background-color: #1A2024;
+    z-index: 99;
+    border-radius: 9px;
+    padding: 10px;
+    right: 25px;
+    bottom: 30px;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px;
+    animation: theMainIcon 1s infinite;
+    display: none;
+    @keyframes theMainIcon{
+        0%{box-shadow: 1px 1px 5px;}
+        50%{box-shadow:  rgba(0, 0, 0, 0) 0px 5px 12px 0;}
+        100%{box-shadow: 1px 1px 5px;}
+    }
+    @include xs{
+        display: block;
+    }
+    .phoneNumber{
+        color: #fedc70;
+        text-decoration: none;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .svgAnimation{
+        padding: 5px;
+        animation: svgAnimation 1s infinite;
+    }
+    @keyframes svgAnimation {
+        0% {transform: rotate(0);}
+        50% {transform: rotate(15deg);}
+        100% {transform: rotate(0);}
+    }
+}
+.logo404{
+    img{
+        display: block;
+        margin: auto;
+    }
+}
+.archiveSourcePagination{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 15px auto;
+    .current{
+        background-color: #fff;
+        cursor: context-menu;
+    }
+    .page-numbers{
+        border: 1px solid #3C3C3C;
+        color: #3C3C3C !important;
+        transition: all 0.3s;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        font-size: 14px;
+        margin: 0 3px;
+        &:hover{
+            background-color: #3C3C3C;
+            color: #fff !important;
+        }
+    }
+    .next{
+        background: none;
+        border: none;
+        margin: 0;
+        &:hover{
+            background: none;
+        }
+    }
+    .prev{
+        background: none;
+        border: none;
+        margin: 0;
+        &:hover{
+            background: none;
+        }
+    }
+}
+.comment-respond{
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
