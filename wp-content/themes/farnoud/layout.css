@@ -519,6 +519,7 @@ html {
 }
 .contactUsPage .cosultationSection .cosultationSection .flexPart .footerIconSocial svg {
   margin: 0 5px;
+  border-radius: 5px;
 }
 
 .singleSource {

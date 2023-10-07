@@ -38,6 +38,33 @@ $break5: 1300px;
 
 
 .theFooterBack{
+    .logoSection{
+        padding: 30px 0;
+        border-bottom: 1px solid #cccccc;
+        margin: 0 0 30px 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .sectionRight{
+            display: flex;
+            align-items: center;
+            @include sm{
+                flex-wrap: wrap;
+            }
+            img{
+                height: 130px;
+                width: auto;
+                margin-left: 20px;
+                @include sm{
+                    margin: auto !important;
+                }
+            }
+            p{
+                text-align: justify;
+            }
+        }
+    }
     .theFooterBack{
         display: flex;
         flex-wrap: wrap;
@@ -113,8 +140,11 @@ $break5: 1300px;
             a{
                 margin: 0 5px;
             }
+            svg{
+                border-radius: 5px;
+            }
             .editSvgFooter{
-                background-color: #ee7d39;
+                background-color: #182536;
                 fill: #fff;
                 padding: 4px;
             }
