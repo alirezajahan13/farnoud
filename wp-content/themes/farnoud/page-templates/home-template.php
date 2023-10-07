@@ -139,7 +139,7 @@ get_header();
     <div class="cosultationSection mainView">
         <div class="sectionHeading centeredHeading">
             <h2 class="bigHeading">مشاوره رایگان</h2>
-            <span class="subHeading">لورم ایپسوم متن ساخت</span>
+            <span class="subHeading">در کمتر از 24 ساعت با شما تماس خواهیم گرفت</span>
         </div>
         <div class="sectionTwinFlex">
             <div class="sectionTwinItem" data-aos="fade-left" data-aos-delay="300" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="center-bottom"><?php echo do_shortcode('[contact-form-7 id="49fdd75" title="فرم مشاوره"]') ?></div>

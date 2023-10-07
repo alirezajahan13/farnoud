@@ -17,10 +17,10 @@ $(document).ready(function(){
         let windowBottom = $(window).scrollTop() + $(window).outerHeight(true);
         let objectCenter = $('#counterNumbers').offset().top + ($('#counterNumbers').outerHeight(true)/2);
         if(windowBottom > objectCenter && functionIsRan==false){
-            stepCounter('#counter-1', 1 , 436 , 3 , 1500);
-            stepCounter('#counter-2', 1 , 9 , 1 , 900);
-            stepCounter('#counter-3', 1 , 13 , 1 , 900);
-            stepCounter('#counter-4', 1 , 821 , 4 , 2000);
+            stepCounter('#counter-1', 1 , 3479 , 10 , 1500);
+            stepCounter('#counter-2', 1 , 6 , 1 , 900);
+            stepCounter('#counter-3', 1 , 17 , 1 , 900);
+            stepCounter('#counter-4', 1 , 6742 , 15 , 2000);
             functionIsRan = true;
         }
 
