@@ -11,21 +11,21 @@ $currentServiceCat = get_queried_object();
         <div class="serviceIntroSection">
             <div class="serviceIntroImage"><img src="<?php echo get_field('service_archive_mb_image','service-cat_'.$currentServiceCat->term_id)['url'] ?>?<?php echo _S_VERSION ?>"></div>
             <div class="serviceIntroText">
-                <p>علم و آگاهی وکلا در زمینه مسائل حقوقی، راهی نجات و امیدبخش برای حل مشکلات حقوقی مردم است. اما انتخاب وکیل مناسب برای بسیاری از مردم، مسئله بسیار مهمی جهت سپردن کارها است. ما در دادصا، با دقت لازم در انتخاب تیم وکلای خود، تیم حرفه ای با ویژگی های برجسته تشکیل داده ایم تا تضمینی باشد برای موفقیت پرونده ‌های شما.
-                شما می‌توانید با خیال راحت مشکلات حقوقی خود را با وکلای درجه یک گروه وکلای دادصا درمیان بگذارید تا در سریع ترین زمان ممکن، با کمترین ضرر و زیان مالی و به دور از کوچک ترین آسیبی، نیاز شما عزیزان را در زمینه های مختلف حقوقی برآورده کنیم.</p>
-                <p>گاهی عدم کمک گرفتن از یک وکیل به بهانه‌ های واهی، اعم از حق‌ الوکاله‌ های بالا یا اعتقاد نداشتن به اثر حضور وکلا، می‌ تواند خسارت‌ های جبران‌ ناپذیری در پی داشته باشد.</p>
+                <p>
+                    اطلاعات و تجربه وکلا در مسائل حقوقی، مهم‌ترین ابزار حل مشکلات حقوقی افراد است. انتخاب وکیل مناسب نیز امری حیاتی برای رسیدن به حل مسائل حقوقی است. در گروه وکلای فرنود، با دقت ویژه، تیم وکلایی با تخصص برجسته و تجربه گسترده را جمع‌آوری کرده‌ایم. این تیم به شما اطمینان می‌دهد که پرونده‌های شما به دقت و با موفقیت حل شوند. شما می‌توانید با خیال راحت مشکلات حقوقی خود را به ما انتقال دهید و از تخصص تیم ما بهره‌مند شوید. <br>گروه وکلای فرنود، با رهبری فرنود زارعی، دارای بیش از 17 سال تجربه موفق در حوزه وکالت در پرونده‌های حساس ملکی و قراردادی، آماده‌ی ارائه خدمات حقوقی با تخصص بالا به شما عزیزان است.
+                </p>
             </div>
 	    </div>
         <?php the_archive_description( '<div class="taxServiceCatDesc">', '</div>' ); ?>
-        <div class="sectionHeading centeredHeading innerSectionHeading">
-			<h2>خدمات فرنود برای <?php echo $currentServiceCat->name ?></h2>
+        <!-- <div class="sectionHeading centeredHeading innerSectionHeading">
+			<h2>خدمات فرنود برای <?php //echo $currentServiceCat->name ?></h2>
 			<span class="subHeading">لورم ایپسوم متن ساختگی با</span>
-		</div>
-        <div class="archiveParent serviceCatArchiveParent">
-        <?php while(have_posts()):the_post();
-            get_template_part('template-parts/content','services');
-        endwhile; ?>
-        </div>
+		</div> -->
+        <!-- <div class="archiveParent serviceCatArchiveParent">
+        <?php //while(have_posts()):the_post();
+            //get_template_part('template-parts/content','services');
+        //endwhile; ?>
+        </div> -->
         
         <div class="sectionHeading centeredHeading innerSectionHeading">
 			<h2>درخواست مشاوره</h2>
